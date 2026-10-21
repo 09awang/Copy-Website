@@ -19,3 +19,28 @@ function rightclick() {
     const img = document.getElementById("caraimgs");
     img.src = imgs[val];
 }
+
+let isClicked = false;
+let sidebarSpacing = 20;
+function burger() {
+    if (!isClicked) {
+        let curVal = document.querySelectorAll(".side");
+        let width = curVal.width;
+        width.src = 20;
+
+    } else {
+        let curVal = document.querySelectorAll(".entire");
+        let widthMarg = curVal.margin-left;
+        width.src = 20;
+    }
+
+}
+function onburg() {
+    document.getElementById()
+}
+
+function dropdown(getdown) {
+    let i = "#" + getdown;
+    window.location.href = i;
+
+}
