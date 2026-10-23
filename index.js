@@ -20,27 +20,36 @@ function rightclick() {
     img.src = imgs[val];
 }
 
-let isClicked = false;
-let sidebarSpacing = 20;
-function burger() {
-    if (!isClicked) {
-        let curVal = document.querySelectorAll(".side");
-        let width = curVal.width;
-        width.src = 20;
-
-    } else {
-        let curVal = document.querySelectorAll(".entire");
-        let widthMarg = curVal.margin-left;
-        width.src = 20;
-    }
-
-}
 function onburg() {
-    document.getElementById()
+    if (document.getElementById("side").style.display === "flex") {
+        document.getElementById("burg").style.color = "white";
+        document.getElementById("burg").style.borderColor = "white";
+        document.getElementById("side").style.display = "none";
+        document.getElementById("entire").style.paddingLeft = "0%";
+
+    }
+    else{
+        document.getElementById("burg").style.color = "black";
+        document.getElementById("burg").style.borderColor = "black";
+        document.getElementById("side").style.display = "flex";
+        document.getElementById("entire").style.paddingLeft = "20%"
+    }
 }
 
 function dropdown(getdown) {
-    let i = "#" + getdown;
+    let i = "#" + getdown + "1";
     window.location.href = i;
-
 }
+
+function  checkCourse() {
+    if (document.getElementById("downDown").style.display === "none") {
+        document.getElementById("downDown").style.display = "block";
+    }
+    else {document.getElementById("downDown").style.display = "none";}
+}
+
+function secondInternal(where) {
+    let i = "#" + where + "1";
+    window.location.href = i;
+}
+

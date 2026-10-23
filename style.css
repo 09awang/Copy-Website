@@ -131,7 +131,7 @@ body{
 
 }
 .entire{
-    margin-left: 20%
+    margin-left: 16%
 }
 
 #burg{
@@ -165,9 +165,8 @@ body{
 
 }
 
-.title:hover {
+#testCombine:hover {
     background-color: white;
-
 
 }
 
@@ -176,12 +175,28 @@ body{
     justify-content: center;
     left: 10px;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
     padding: 20px;
 }
 
 .dropdown:hover {
+    background-color: white;
+}
+
+#downDown {
+    display: none;
+}
+
+.classes {
+    display: compact;
+    color: black;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.classes:hover {
     background-color: white;
 }
